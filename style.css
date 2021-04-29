@@ -217,3 +217,31 @@ div .main-content {
     font-size: 10px;
     width: 310px;
 }
+
+/* FOOTER */
+
+#footer-site {
+    padding: 5rem;
+    background: url(assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#footer-site h2{
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mail img {
+    
+    width: 40px;
+    height: 26px;
+    margin-right: 3rem;
+}
+
+.telephone img {
+    width: 40px;
+    height: 32px;
+    margin-right: 3rem;
+}
