@@ -7,6 +7,7 @@
     --primary-color: #F1CDB3;
     --text-second-color: #545454;
     --light: #F5F5F5;
+    --black: #292929;
 }
 
 * {
@@ -63,6 +64,17 @@ a {
     color: var(--light);
 }
 
+.bcg-light {
+    background-color: var(--light);
+    padding: 20px;
+}
+
+.text-black {
+    color: var(--black);
+}
+
+/* HOME */
+
 #navbarNavAltMarkup {
     display: flex;
     justify-content: flex-end;
@@ -96,3 +108,112 @@ div .main-content {
       
 }
 
+/* ABOUT */
+
+ .about {
+    margin-top: 6rem;    
+ }
+
+ .about h2 {
+     margin-bottom: 1.5rem;
+ }
+
+ .text-about {
+    width:30rem;
+ }
+
+/* CAROUSEL */
+
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+  
+  /* HELP SECTION */
+
+.icon {
+  width:45px;
+  height: 57px;
+}
+
+.help .row {
+  justify-content: center;
+  margin: 55px;
+}
+
+.number-bank {
+  background-color: var(--primary-color);
+  border-radius: 0.9rem;
+  padding: 0.8rem;
+  width: 320px;
+  font-size: 20px;
+}
+
+.number-bank img {
+  width:30px;
+  height: 24px;
+  margin-right: 1rem;    
+}
+
+.legal {
+    color: lightgray;
+    font-size: 10px;
+    width: 310px;
+}
