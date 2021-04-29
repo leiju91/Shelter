@@ -29,8 +29,9 @@ body {
     overflow-x: hidden;
 }
 
-body {
+#main {
     background-image: url("assets/background.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -38,6 +39,9 @@ a {
     text-decoration: none;
 }
 
+.main-h1 {
+    margin-bottom: 3rem;
+}
 
 .serif {
     font-family: var(--primary-font);
@@ -69,10 +73,14 @@ a {
     text-decoration: none;
     background-color: var(--primary-color);
     border-radius: 2rem;
-    padding: 0.7rem 2.3rem 0.7rem 2.3rem;
+    padding: 0.7rem 2.3rem 0.7rem 2.3rem;    
 }
 
 h1 span {
+    display:block;
+}
+
+h2 span {
     display:block;
 }
 
@@ -81,6 +89,10 @@ h1 span {
 }
 
 div .main-content {
-    height: 100vh;
-    max-width: 45%;    
+    height: 50vh;
+    max-width: 45%;  
+    position: relative;
+    margin-top: 15%;
+      
 }
+
