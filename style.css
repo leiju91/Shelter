@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+
+    --primary-font: 'PT Serif', serif;
+    --second-font: 'PT Sans', sans-serif;
+    --primary-color: #F1CDB3;
+    --text-second-color: #545454;
+    --light: #F5F5F5;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {  
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url("assets/background.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+.serif {
+    font-family: var(--primary-font);
+}
+
+.no-serif {
+    font-family: var(--second-font);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.text-grey {
+    color: var(--text-second-color);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+#navbarNavAltMarkup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;    
+}
+
+.slogan {
+    letter-spacing: 0.08rem;
+}
