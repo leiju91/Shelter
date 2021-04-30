@@ -96,72 +96,139 @@
             </div>
             <div class="pets-carousels">
                 <div class="container text-center my-5">
-                    <h2 class="font-weight-light serif text-grey">Our friends who <span>are looking for a home</span></h2>
-                    <div class="row mx-auto my-auto">
-                        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                            <div class="carousel-inner w-100" role="listbox">
-                                <div class="carousel-item active">
-                                    <div class="col-md-4">
-                                        <div class="card card-body">
-                                            <img class="img-fluid icon" src="http://placehold.it/380?text=1">
+                    <h2 class="font-weight-light serif text-grey">Our friends who <span>are looking for a home</span>
+                    </h2>
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                        <!--Controls-->
+                        <div class="controls-top">
+                            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                                    class="fas fa-chevron-left"></i></a>
+                            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                                    class="fas fa-chevron-right"></i></a>
+                        </div>
+                        <!--/.Controls-->
+
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                            <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+                        </ol>
+                        <!--/.Indicators-->
+
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                                <div class="col-md-3" style="float:left">
+                                    <div id="card-pets"class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="assets/cats.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="serif card-title">Katerin</h4>                                            
+                                            <a class="btn ">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="card card-body">
-                                            <img class="img-fluid icon" src="http://placehold.it/380?text=2">
+                                <div class="col-md-3" style="float:left">
+                                    <div id="card-pets"class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="assets/jennifer.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="serif card-title">Jennifer</h4>                                            
+                                            <a class="btn">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="card card-body">
-                                            <img class="img-fluid icon" src="http://placehold.it/380?text=3">
+                                <div class="col-md-3" style="float:left">
+                                    <div id="card-pets"class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="assets/woody.jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="serif card-title">Woody</h4>                                            
+                                            <a class="btn ">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="card card-body">
-                                            <img class="img-fluid icon" src="http://placehold.it/380?text=4">
+                            <!--/.First slide-->
+
+                            <!--Second slide-->
+                            <div class="carousel-item">
+                                <div class="col-md-3" style="float:left">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="serif card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the
+                                                card's content.</p>
+                                            <a class="btn ">Button</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="card card-body">
-                                            <img class="img-fluid icon" src="http://placehold.it/380?text=5">
+
+                                <div class="col-md-3" style="float:left">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="serif card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the
+                                                card's content.</p>
+                                            <a class="btn ">Button</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="card card-body">
-                                            <img class="img-fluid icon" src="http://placehold.it/380?text=6">
+
+                                <div class="col-md-3" style="float:left">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="serif card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the
+                                                card's content.</p>
+                                            <a class="btn ">Button</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3" style="float:left">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top"
+                                            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the
+                                                card's content.</p>
+                                            <a class="btn ">Button</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
-                                    aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
-                                    aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                            <!--/.Second slide-->
                         </div>
-                    </div>                    
+                        <!--/.Slides-->
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- fin about -->
+    <!-- help -->
     <section class="help">
         <div class="container">
             <h2 class="serif text-grey text-center">Than you can help <span> our shelter</span></h2>
@@ -169,49 +236,48 @@
         <div class="row">
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/cat-food.svg" alt="food">
-                <p class="serif text-grey">Pet Food</p>
+                <p class="serif text-grey mt-3">Pet Food</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/ambulance.svg" alt="ambulance">
-                <p class="serif text-grey">Transportation</p>
+                <p class="serif text-grey mt-3">Transportation</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/ball.svg" alt="toys">
-                <p class="serif text-grey">Toys</p>
+                <p class="serif text-grey mt-3">Toys</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/bowl.svg" alt="bowls">
-                <p class="serif text-grey">Bowls and cups</p>
+                <p class="serif text-grey mt-3">Bowls and cups</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/shampoo.svg" alt="shampoos">
-                <p class="serif text-grey">Shampoos</p>
+                <p class="serif text-grey mt-3">Shampoos</p>
             </div>
         </div>
         <div class="row">
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/pills.svg" alt="vita">
-                <p class="serif text-grey">Vitamines</p>
+                <p class="serif text-grey mt-3">Vitamines</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/syringe.svg" alt="medoc">
-                <p class="serif text-grey">Medecines</p>
+                <p class="serif text-grey mt-3">Medecines</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/leash.svg" alt="leash">
-                <p class="serif text-grey">Collars / Leashes</p>
+                <p class="serif text-grey mt-3">Collars / Leashes</p>
             </div>
             <div class="col-2 text-center">
                 <img class="img-fluid icon" src="assets/icon/cat.svg" alt="sleep">
-                <p class="serif text-grey">Sleeping area</p>
+                <p class="serif text-grey mt-3">Sleeping area</p>
             </div>
-            
         </div>
         <div class="bcg-light">
             <div class="container bcg-light">
                 <div class="row align-items-center">
                     <div class="col-6">
-                        <img class="img-fluid"src="assets/dogs.png" alt="dogs">
+                        <img class="img-fluid" src="assets/dogs.png" alt="dogs">
                     </div>
                     <div class="col-6">
                         <h2 class="serif text-grey">In addition, you <span>can make a donation</span></h2>
@@ -219,12 +285,13 @@
                         <p class="number-bank serif text-black">
                             <img src="assets/icon/credit-card (1).svg" alt="creditcard">
                             8380 2880 8028 8791 7435</p>
-                        <p class="legal fst-italic secondary">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed 
-                            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum 
+                        <p class="legal fst-italic secondary">Legal information and lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+                            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
                             et malesuada fames ac ante ipsum primis in faucibus. </p>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
     <footer id="footer-site">
@@ -232,14 +299,18 @@
             <div class="row">
                 <div class="col-4">
                     <h2 class="serif text-light">For questions <span>and suggestions</span></h2>
-                    <p class="mail primary-color serif"><img src="assets/icon/envelope.svg" alt="mail">email@shelter.com</p>
-                    <p class="telephone primary-color serif"><img src="assets/icon/telephone.svg" alt="tel">+13 674 567 75 54</p>
+                    <p class="mail primary-color serif"><img src="assets/icon/envelope.svg" alt="mail">email@shelter.com
+                    </p>
+                    <p class="telephone primary-color serif"><img src="assets/icon/telephone.svg" alt="tel">+13 674 567
+                        75 54</p>
                 </div>
                 <div class="col-4">
                     <h2 class="serif text-light">We are waiting <span>for your visit</span></h2>
-                    <p class="mail primary-color serif"><img src="assets/icon/pin.svg" alt="mail">Boston, Central Street, 1st
+                    <p class="pos primary-color serif text-end"><img src="assets/icon/pin.svg" alt="pos">Boston, Central
+                        Street, 1st
                         (Entrance from the store)</p>
-                    <p class="telephone primary-color serif"><img src="assets/icon/pin.svg" alt="tel">London, South Park, 18st</p>
+                    <p class="pos primary-color serif"><img src="assets/icon/pin.svg" alt="pos">London, South Park, 18st
+                    </p>
                 </div>
                 <div class="col-4">
                 </div>
